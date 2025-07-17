@@ -27,7 +27,7 @@ The core logic of the application is contained within the `api` folder.
 - Example: User `one` adding a csv file with title `My ML dataset`.
 <img width="835" height="500" alt="image" src="https://github.com/user-attachments/assets/f6eb7d65-0e6a-4333-a918-6d6b8c1b26ca" />
 - Similarly user `two` adding a pdf file with title `My Report`.
-- 
+
 ### `[GET] /api/files/`
 - Lists all files currently in the system (for admin or general view).
 - Example: User `one` listing all files in the system.
@@ -40,7 +40,7 @@ The core logic of the application is contained within the `api` folder.
 
 ### `[POST] /api/transfer/`
 - Transfers ownership of a file from the current owner to another user.
-- Example: User `one` transfering ownership of file with id 4 to user `two`.
+- Example: User `one` transfering ownership of file with id 4 to user `two` with user_id 3.
 <img width="857" height="399" alt="image" src="https://github.com/user-attachments/assets/b9122905-6dc5-4676-91c7-8ed07d2ce0ff" />
 
 - On same request it will throw error as user `one` is no longer the owner, `one` can only revoke the access.
